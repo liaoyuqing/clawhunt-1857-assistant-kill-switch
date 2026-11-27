@@ -181,7 +181,35 @@ scripts/smoke_e2e.py                             对真实 PostgreSQL 的端到�
 tests/                                           72 个用例
 ```
 
-## 九、数据与保密
+## 九、证据文件（docs/checks/）
+
+| 文件 | 内容 | 实测末行 |
+| --- | --- | --- |
+| `docs/checks/01-install.txt` | 干净 venv 从零装依赖的完整 pip 输出 | `INSTALL_EXIT=0` |
+| `docs/checks/02-pytest.txt` | 全量用例输出 | `72 passed, 1 warning in 27.85s` |
+| `docs/checks/03-ruff.txt` | 静态检查 | `All checks passed!` |
+| `docs/checks/04-mypy.txt` | 类型检查 | `Success: no issues found in 31 source files` |
+| `docs/checks/05-build.txt` | 构建 sdist 与 wheel | `Successfully built ... .tar.gz and ...-py3-none-any.whl` |
+| `docs/checks/06-smoke.txt` | 对真实 PostgreSQL 的端到端冒烟（9 项断言） | `SMOKE_RESULT=PASS checks=9` |
+| `docs/checks/07-ac-evidence.txt` | 四条验收标准对应用例的逐条明细（21 例） | `21 passed, 1 warning in 22.22s` |
+| `docs/checks/screenshots/01..10-*.png` | 运维控制台十张截图（1280×1040） | 见下表 |
+
+截图与界面状态的对应关系：
+
+| 截图 | 展示的状态 |
+| --- | --- |
+| `01-console-enabled.png` | 初始化后四级开关全为 `true`，banner 为「员工 AI 助手可用（none）」 |
+| `02-staff-available.png` | 站点运营身份查状态：`enabled=true`，4 个工具全可用 |
+| `03-admin-switches.png` | 系统管理员看到完整开关表（5 行，含 global） |
+| `04-global-disabled-form.png` | 通过控制台表单关闭 global：`applyNote` 回显 HTTP 200 与写回的整行，表内 global 变 `false` |
+| `05-chat-503.png` | 同一页面点「发送」：`HTTP 503` + `{"code":"ASSISTANT_DISABLED","source":"global"}` |
+| `06-site-hangzhou-off.png` | 只关杭州站点：杭州用户 `enabled=false`、`source=site`、展示文案为站点级 |
+| `07-site-suzhou-on.png` | 同一时刻苏州用户 `enabled=true`、4 个工具可用（AC3 的两侧对照） |
+| `08-tool-blocked.png` | 只关 `sop_draft`：列表 3 可用 / 1 停用，工具名划线置灰 |
+| `09-non-admin-403.png` | 站点管理员查开关表：`403 SWITCH_FORBIDDEN：当前身份不是系统管理员` |
+| `10-dual-site-user.png` | 杭州+苏州双站点用户：任一站点关闭即拒的对照身份 |
+
+## 十、数据与保密
 
 示例数据全部虚构：企业名（星澜科技、云栖生物、恒泰智造）、人名（周敏、林澈、何然、苏禾、唐宁）、
 站点（site-hangzhou / site-suzhou）均为演示用，不对应任何真实主体。仓库与文档中不出现客户名称。

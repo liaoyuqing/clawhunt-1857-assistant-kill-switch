@@ -1,0 +1,38 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- E:\AI�ӵ�\Clawhunt\delivery\work\1857\_venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\AI�ӵ�\Clawhunt\delivery\work\1857\clean
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 21 items
+
+tests/test_sse.py::test_in_flight_stream_ends_within_five_seconds AC2_EVIDENCE tokens=11 finish_reason=disabled source=global latency_ms=500
+PASSED
+tests/test_sse.py::test_stream_is_refused_when_already_disabled PASSED
+tests/test_sse.py::test_finish_frame_reports_a_finished_stream PASSED
+tests/test_force_off.py::test_force_off_survives_a_dead_database PASSED
+tests/test_force_off.py::test_force_off_status_is_still_readable PASSED
+tests/test_force_off.py::test_force_off_false_is_not_the_brake PASSED
+tests/test_module_isolation.py::test_recruitment_tasks_survive_an_assistant_shutdown PASSED
+tests/test_module_isolation.py::test_assistant_survives_a_recruitment_shutdown PASSED
+tests/test_module_isolation.py::test_force_off_does_not_touch_recruitment PASSED
+tests/test_module_isolation.py::test_audit_action_prefixes_differ PASSED
+tests/test_module_isolation.py::test_cache_keys_do_not_share_a_namespace PASSED
+tests/test_site_scope.py::test_hangzhou_user_is_refused_after_site_close PASSED
+tests/test_site_scope.py::test_suzhou_user_is_unaffected PASSED
+tests/test_site_scope.py::test_status_shows_the_display_message PASSED
+tests/test_site_scope.py::test_dual_site_user_is_refused_and_single_site_user_is_not PASSED
+tests/test_site_scope.py::test_reopening_the_site_restores_access PASSED
+tests/test_site_scope.py::test_role_and_tool_levels_compose_with_site PASSED
+tests/test_tool_scope.py::test_blocked_tool_disappears_from_the_list PASSED
+tests/test_tool_scope.py::test_invoking_the_blocked_tool_answers_409 PASSED
+tests/test_tool_scope.py::test_other_tools_still_work PASSED
+tests/test_tool_scope.py::test_unknown_tool_is_404 PASSED
+
+============================== warnings summary ===============================
+..\_venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\AI�ӵ�\Clawhunt\delivery\work\1857\_venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 21 passed, 1 warning in 22.22s ========================
