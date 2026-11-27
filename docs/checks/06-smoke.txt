@@ -1,4 +1,4 @@
-﻿PASS seed/reset :: asst_switch rows = 5
+PASS seed/reset :: asst_switch rows = 5
 PASS AC3 site isolation :: hangzhou=503(ASSISTANT_DISABLED) suzhou=200
 PASS AC2 SSE finish_reason=disabled :: tokens=5 reason=disabled latency=172ms checks=6
 PASS closed chat -> 503 ASSISTANT_DISABLED :: HTTP 503 ASSISTANT_DISABLED source=global
