@@ -1,0 +1,189 @@
+﻿python.exe : * Creating isolated environment: venv+pip...
+At line:5 char:1
++ & $py -m build 2>&1 | Out-File -Encoding utf8 "docs/checks/05-build.t ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (* Creating isol...nt: venv+pip...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+* Installing packages in isolated environment:
+  - setuptools>=69
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+writing member_space_assistant_killswitch.egg-info\PKG-INFO
+writing dependency_links to member_space_assistant_killswitch.egg-info\dependency_links.txt
+writing requirements to member_space_assistant_killswitch.egg-info\requires.txt
+writing top-level names to member_space_assistant_killswitch.egg-info\top_level.txt
+reading manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+writing manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building sdist...
+running sdist
+running egg_info
+writing member_space_assistant_killswitch.egg-info\PKG-INFO
+writing dependency_links to member_space_assistant_killswitch.egg-info\dependency_links.txt
+writing requirements to member_space_assistant_killswitch.egg-info\requires.txt
+writing top-level names to member_space_assistant_killswitch.egg-info\top_level.txt
+reading manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+writing manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+running check
+creating member_space_assistant_killswitch-1.0.0
+creating member_space_assistant_killswitch-1.0.0\app
+creating member_space_assistant_killswitch-1.0.0\app\asst
+creating member_space_assistant_killswitch-1.0.0\app\recruit
+creating member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+creating member_space_assistant_killswitch-1.0.0\tests
+copying files to member_space_assistant_killswitch-1.0.0...
+copying README.md -> member_space_assistant_killswitch-1.0.0
+copying pyproject.toml -> member_space_assistant_killswitch-1.0.0
+copying app\__init__.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\audit.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\cache.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\config.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\console_routes.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\db.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\deps.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\errors.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\iam.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\main.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\models.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\notify.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\repository.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\resolver.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\sse.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\switch_domain.py -> member_space_assistant_killswitch-1.0.0\app
+copying app\asst\__init__.py -> member_space_assistant_killswitch-1.0.0\app\asst
+copying app\asst\routes.py -> member_space_assistant_killswitch-1.0.0\app\asst
+copying app\asst\switch.py -> member_space_assistant_killswitch-1.0.0\app\asst
+copying app\recruit\__init__.py -> member_space_assistant_killswitch-1.0.0\app\recruit
+copying app\recruit\routes.py -> member_space_assistant_killswitch-1.0.0\app\recruit
+copying member_space_assistant_killswitch.egg-info\PKG-INFO -> member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+copying member_space_assistant_killswitch.egg-info\SOURCES.txt -> member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+copying member_space_assistant_killswitch.egg-info\dependency_links.txt -> member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+copying member_space_assistant_killswitch.egg-info\requires.txt -> member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+copying member_space_assistant_killswitch.egg-info\top_level.txt -> member_space_assistant_killswitch-1.0.0\member_space_assistant_killswitch.egg-info
+copying tests\test_admin_api.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_cache.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_decision.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_force_off.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_module_isolation.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_resolver.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_site_scope.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_sse.py -> member_space_assistant_killswitch-1.0.0\tests
+copying tests\test_tool_scope.py -> member_space_assistant_killswitch-1.0.0\tests
+Writing member_space_assistant_killswitch-1.0.0\setup.cfg
+Creating tar archive
+removing 'member_space_assistant_killswitch-1.0.0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=69
+  - wheel
+* Getting build dependencies for wheel...
+running egg_info
+writing member_space_assistant_killswitch.egg-info\PKG-INFO
+writing dependency_links to member_space_assistant_killswitch.egg-info\dependency_links.txt
+writing requirements to member_space_assistant_killswitch.egg-info\requires.txt
+writing top-level names to member_space_assistant_killswitch.egg-info\top_level.txt
+reading manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+writing manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build\lib\app
+copying app\audit.py -> build\lib\app
+copying app\cache.py -> build\lib\app
+copying app\config.py -> build\lib\app
+copying app\console_routes.py -> build\lib\app
+copying app\db.py -> build\lib\app
+copying app\deps.py -> build\lib\app
+copying app\errors.py -> build\lib\app
+copying app\iam.py -> build\lib\app
+copying app\main.py -> build\lib\app
+copying app\models.py -> build\lib\app
+copying app\notify.py -> build\lib\app
+copying app\repository.py -> build\lib\app
+copying app\resolver.py -> build\lib\app
+copying app\sse.py -> build\lib\app
+copying app\switch_domain.py -> build\lib\app
+copying app\__init__.py -> build\lib\app
+creating build\lib\app\asst
+copying app\asst\routes.py -> build\lib\app\asst
+copying app\asst\switch.py -> build\lib\app\asst
+copying app\asst\__init__.py -> build\lib\app\asst
+creating build\lib\app\recruit
+copying app\recruit\routes.py -> build\lib\app\recruit
+copying app\recruit\__init__.py -> build\lib\app\recruit
+running egg_info
+writing member_space_assistant_killswitch.egg-info\PKG-INFO
+writing dependency_links to member_space_assistant_killswitch.egg-info\dependency_links.txt
+writing requirements to member_space_assistant_killswitch.egg-info\requires.txt
+writing top-level names to member_space_assistant_killswitch.egg-info\top_level.txt
+reading manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+writing manifest file 'member_space_assistant_killswitch.egg-info\SOURCES.txt'
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\app
+creating build\bdist.win-amd64\wheel\app\asst
+copying build\lib\app\asst\routes.py -> build\bdist.win-amd64\wheel\.\app\asst
+copying build\lib\app\asst\switch.py -> build\bdist.win-amd64\wheel\.\app\asst
+copying build\lib\app\asst\__init__.py -> build\bdist.win-amd64\wheel\.\app\asst
+copying build\lib\app\audit.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\cache.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\config.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\console_routes.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\db.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\deps.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\errors.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\iam.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\main.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\models.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\notify.py -> build\bdist.win-amd64\wheel\.\app
+creating build\bdist.win-amd64\wheel\app\recruit
+copying build\lib\app\recruit\routes.py -> build\bdist.win-amd64\wheel\.\app\recruit
+copying build\lib\app\recruit\__init__.py -> build\bdist.win-amd64\wheel\.\app\recruit
+copying build\lib\app\repository.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\resolver.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\sse.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\switch_domain.py -> build\bdist.win-amd64\wheel\.\app
+copying build\lib\app\__init__.py -> build\bdist.win-amd64\wheel\.\app
+running install_egg_info
+Copying member_space_assistant_killswitch.egg-info to build\bdist.win-amd64\wheel\.\member_space_assistant_killswitch-1.0.0-py3.11.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\member_space_assistant_killswitch-1.0.0.dist-info\WHEEL
+creating 'E:\\AI�ӵ�\\Clawhunt\\delivery\\work\\1857\\clean\\dist\\.tmp-2hmyfqrn\\member_space_assistant_killswitch-1.0.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+adding 'app/__init__.py'
+adding 'app/audit.py'
+adding 'app/cache.py'
+adding 'app/config.py'
+adding 'app/console_routes.py'
+adding 'app/db.py'
+adding 'app/deps.py'
+adding 'app/errors.py'
+adding 'app/iam.py'
+adding 'app/main.py'
+adding 'app/models.py'
+adding 'app/notify.py'
+adding 'app/repository.py'
+adding 'app/resolver.py'
+adding 'app/sse.py'
+adding 'app/switch_domain.py'
+adding 'app/asst/__init__.py'
+adding 'app/asst/routes.py'
+adding 'app/asst/switch.py'
+adding 'app/recruit/__init__.py'
+adding 'app/recruit/routes.py'
+adding 'member_space_assistant_killswitch-1.0.0.dist-info/METADATA'
+adding 'member_space_assistant_killswitch-1.0.0.dist-info/WHEEL'
+adding 'member_space_assistant_killswitch-1.0.0.dist-info/top_level.txt'
+adding 'member_space_assistant_killswitch-1.0.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Successfully built member_space_assistant_killswitch-1.0.0.tar.gz and member_space_assistant_killswitch-1.0.0-py3-none-any.whl

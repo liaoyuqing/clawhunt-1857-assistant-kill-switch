@@ -1,0 +1,66 @@
+﻿PASS seed/reset :: asst_switch rows = 5
+PASS AC3 site isolation :: hangzhou=503(ASSISTANT_DISABLED) suzhou=200
+PASS AC2 SSE finish_reason=disabled :: tokens=5 reason=disabled latency=172ms checks=6
+PASS closed chat -> 503 ASSISTANT_DISABLED :: HTTP 503 ASSISTANT_DISABLED source=global
+PASS AC4 recruitment AI unaffected :: tasks=200 run=200 leads=12
+PASS reopen restores access :: HTTP 200
+PASS tool level removes + 409 :: tools=3 blocked=['sop_draft'] invoke=409
+PASS non-admin -> 403 SWITCH_FORBIDDEN :: HTTP 403
+python.exe : E:\AI�ӵ�\Clawhunt\delivery\work\1857\_venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecation
+Warning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+At line:6 char:1
++ & $py scripts/smoke_e2e.py 2>&1 | Out-File -Encoding utf8 "docs/check ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (E:\AI�ӵ�\Clawhu...ttpx2` instead.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from starlette.testclient import TestClient as TestClient  # noqa
+PASS AC1 force-off with dead database :: chat=503 code=ASSISTANT_DISABLED db_ops={'connects': 0, 'statements': 0, 'sessions': 0} status=200 enabled=False
+SMOKE_RESULT=PASS checks=9
+[
+  {
+    "check": "seed/reset",
+    "ok": true,
+    "detail": "asst_switch rows = 5"
+  },
+  {
+    "check": "AC3 site isolation",
+    "ok": true,
+    "detail": "hangzhou=503(ASSISTANT_DISABLED) suzhou=200"
+  },
+  {
+    "check": "AC2 SSE finish_reason=disabled",
+    "ok": true,
+    "detail": "tokens=5 reason=disabled latency=172ms checks=6"
+  },
+  {
+    "check": "closed chat -> 503 ASSISTANT_DISABLED",
+    "ok": true,
+    "detail": "HTTP 503 ASSISTANT_DISABLED source=global"
+  },
+  {
+    "check": "AC4 recruitment AI unaffected",
+    "ok": true,
+    "detail": "tasks=200 run=200 leads=12"
+  },
+  {
+    "check": "reopen restores access",
+    "ok": true,
+    "detail": "HTTP 200"
+  },
+  {
+    "check": "tool level removes + 409",
+    "ok": true,
+    "detail": "tools=3 blocked=['sop_draft'] invoke=409"
+  },
+  {
+    "check": "non-admin -> 403 SWITCH_FORBIDDEN",
+    "ok": true,
+    "detail": "HTTP 403"
+  },
+  {
+    "check": "AC1 force-off with dead database",
+    "ok": true,
+    "detail": "chat=503 code=ASSISTANT_DISABLED db_ops={'connects': 0, 'statements': 0, 'sessions': 0} status=200 enabled=False"
+  }
+]
