@@ -187,3 +187,7 @@ adding 'member_space_assistant_killswitch-1.0.0.dist-info/top_level.txt'
 adding 'member_space_assistant_killswitch-1.0.0.dist-info/RECORD'
 removing build\bdist.win-amd64\wheel
 Successfully built member_space_assistant_killswitch-1.0.0.tar.gz and member_space_assistant_killswitch-1.0.0-py3-none-any.whl
+
+ARTIFACT member_space_assistant_killswitch-1.0.0-py3-none-any.whl 34936 bytes
+ARTIFACT member_space_assistant_killswitch-1.0.0.tar.gz 43892 bytes
+BUILD_EXIT=0
